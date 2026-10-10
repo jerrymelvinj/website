@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swink Tattoo Studio | Artistry, Untamed</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#0a0a0a',
+                            light: '#f5f5f5',
+                            gray: '#1a1a1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.95)), url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #ffffff, #a3a3a3);
+        }
+        .gold-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #D4AF37, #F3E5AB);
+        }
+        .glass-panel {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-panel border-b-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html#" class="font-serif text-2xl font-bold tracking-widest text-white uppercase">Swink</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html#about" class="text-gray-300 hover:text-brand-gold px-3 py-2 text-sm font-medium transition-colors">Studio</a>
+                        <a href="index.html#artists" class="text-gray-300 hover:text-brand-gold px-3 py-2 text-sm font-medium transition-colors">Artists</a>
+                        <a href="categories.html" class="text-gray-300 hover:text-brand-gold px-3 py-2 text-sm font-medium transition-colors">Categories</a>
+                        <a href="index.html#pricing" class="text-gray-300 hover:text-brand-gold px-3 py-2 text-sm font-medium transition-colors">Pricing</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html#contact" class="bg-brand-gold text-black px-6 py-2 rounded-full font-medium hover:bg-white transition-colors duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Categories Page Hero & Grid -->
+    <main class="pt-24 min-h-screen bg-brand-dark pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+            <div class="text-center mb-16 max-w-3xl mx-auto">
+                <h2 class="text-sm font-bold tracking-[0.2em] text-brand-gold uppercase mb-4">Tattoo Categories</h2>
+                <h3 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Art that speaks to your heart</h3>
+                <p class="text-gray-400 text-lg">
+                    Getting a tattoo from Swink is like unlocking a gateway to your inner universe. Your stories become eternal in ink, with each design a tribute to your uniqueness and the boundless potential of creativity.
+                </p>
+            </div>
+
+            <!-- Signature Tattoo Collections (The Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Travel -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1590246814883-578ae1082a63?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Travel Tattoos</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">Cartography of the soul</span>
+                    </div>
+                </div>
+                <!-- Animal -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Pet Portraits</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">Immortalizing Bonds</span>
+                    </div>
+                </div>
+                <!-- Calligraphy -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Calligraphy</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">Words with meaning</span>
+                    </div>
+                </div>
+                <!-- Watercolor -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Watercolor</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">Vibrant Splashes</span>
+                    </div>
+                </div>
+                <!-- Coverup -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Coverup Tattoos</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">A fresh start</span>
+                    </div>
+                </div>
+                <!-- Double Exposure -->
+                <div class="group relative h-80 overflow-hidden rounded-lg border border-gray-800">
+                    <img src="https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover opacity-70 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 pointer-events-none">
+                        <span class="text-white font-serif text-2xl font-medium tracking-wide">Double Exposure</span>
+                        <span class="text-xs font-sans text-brand-gold uppercase tracking-widest mt-2 block">Surreal Artistry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer class="bg-black py-12 border-t border-gray-900 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="font-serif text-3xl font-bold tracking-widest text-white uppercase mb-6">Swink</h2>
+            <p class="text-gray-500 text-sm mb-6">Artistry, Untamed. Crafted with passion.</p>
+            <div class="flex justify-center gap-6 mb-8 text-gray-400">
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+            </div>
+            <p class="text-gray-700 text-xs">&copy; 2026 Swink Tattoo Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
