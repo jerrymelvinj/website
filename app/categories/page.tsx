@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import BookingForm from '@/components/BookingForm';
+import ConversionBanner from '@/components/ConversionBanner';
 import { getCategories } from '@/sanity/client';
 
 export const revalidate = 60; // SSG with ISR
@@ -19,7 +20,7 @@ export default async function CategoriesPage() {
   const categories = await getCategories();
 
   return (
-    <main className="pt-24 min-h-screen bg-brand-dark pb-12">
+    <main className="pt-24 min-h-screen bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-sm font-bold tracking-[0.2em] text-brand-gold uppercase mb-4">Tattoo Categories</h2>
@@ -51,10 +52,11 @@ export default async function CategoriesPage() {
         </div>
       </div>
 
-      {/* Appointment Booking Form at bottom of categories */}
-      <div className="mt-16">
-        <BookingForm />
-      </div>
+      {/* Conversion / WhatsApp CTA Banner */}
+      <ConversionBanner />
+
+      {/* Appointment Booking Form */}
+      <BookingForm />
     </main>
   );
 }

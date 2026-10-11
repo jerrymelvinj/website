@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { MapPin, Phone, MessageCircle, ChevronDown, ArrowRight, PenTool, Maximize, ShieldCheck } from 'lucide-react';
 import BookingForm from '@/components/BookingForm';
+import ConversionBanner from '@/components/ConversionBanner';
 import { getArtists } from '@/sanity/client';
 
 export const revalidate = 60; // SSG with Incremental Static Regeneration (ISR)
@@ -178,6 +179,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Conversion Banner */}
+      <ConversionBanner />
 
       {/* Appointment Booking Form (Captured to WhatsApp) */}
       <BookingForm />

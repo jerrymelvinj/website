@@ -12,6 +12,14 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: '/categories.html',
+        destination: '/categories',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
