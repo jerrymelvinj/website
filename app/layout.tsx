@@ -85,6 +85,11 @@ export default function RootLayout({
     '@id': 'https://swinktattoo.vercel.app',
     url: 'https://swinktattoo.vercel.app',
     telephone: '+919035077840',
+    email: 'swinktattoostudio@gmail.com',
+    sameAs: [
+      'https://www.instagram.com/swink_tattoo_studio/',
+      'https://www.youtube.com/@SwinkTattooStudio',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: '36, 20th Main Rd, Jay Bheema Nagar, 1st Stage',

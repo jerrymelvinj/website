@@ -41,7 +41,7 @@ export default async function HomePage() {
                 href="tel:+919035077840"
                 className="flex items-center justify-center gap-2 glass-panel text-white border border-gray-600 px-8 py-4 rounded-full font-medium hover:bg-white hover:text-black transition-colors"
               >
-                <Phone className="w-5 h-5" /> Book on Call
+                <Phone className="w-5 h-5" /> Book a Call
               </a>
               <a
                 href={whatsappPreloadedUrl}

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Clock, Navigation, Phone, MessageCircle, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
+import { MapPin, Clock, Navigation, Phone, MessageCircle, Mail, Instagram, Facebook, Youtube } from 'lucide-react';
 
 export default function Footer() {
   const googleMapsUrl = 'https://maps.app.goo.gl/7eZyR7dYE2iMueWy6';
@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
                 <Clock className="w-4 h-4 text-brand-gold shrink-0" />
-                <span>All Days: 11:00 AM - 09:30 PM</span>
+                <span>Mon to Sun (11.am 9.30 p.m)</span>
               </div>
               <a
                 href={googleMapsUrl}
@@ -82,19 +82,28 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-brand-gold shrink-0" />
-                <a href="mailto:getinked@swinktattoo.com" className="text-gray-400 hover:text-white transition-colors">getinked@swinktattoo.com</a>
+                <a href="mailto:swinktattoostudio@gmail.com" className="text-gray-400 hover:text-white transition-colors">swinktattoostudio@gmail.com</a>
               </li>
             </ul>
 
             <div className="flex items-center gap-4 text-gray-400">
-              <a href="#" className="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/swink_tattoo_studio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Facebook">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href="#" className="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Twitter">
-                <Twitter className="w-4 h-4" />
+              <a
+                href="https://www.youtube.com/@SwinkTattooStudio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-4 h-4" />
               </a>
             </div>
           </div>
