@@ -25,7 +25,7 @@ export default {
       name: 'address',
       title: 'Studio Physical Address',
       type: 'text',
-      initialValue: 'TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034',
+      initialValue: '36, 20th Main Rd, Jay Bheema Nagar, 1st Stage, BTM 1st Stage, Bengaluru, Karnataka 560068',
     },
   ],
 };

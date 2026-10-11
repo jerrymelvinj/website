@@ -2,9 +2,7 @@ import Link from 'next/link';
 import { MapPin, Clock, Navigation, Phone, MessageCircle, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
 
 export default function Footer() {
-  const googleMapsUrl =
-    'https://maps.google.com/?q=' +
-    encodeURIComponent('TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034');
+  const googleMapsUrl = 'https://maps.app.goo.gl/7eZyR7dYE2iMueWy6';
 
   const whatsappUrl =
     'https://wa.me/919035077840?text=' +
@@ -24,7 +22,7 @@ export default function Footer() {
             <div className="pt-2">
               <div className="flex items-start gap-3 text-sm text-gray-300 mb-3">
                 <MapPin className="w-5 h-5 text-brand-gold shrink-0 mt-0.5" />
-                <span>TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034</span>
+                <span>36, 20th Main Rd, Jay Bheema Nagar, 1st Stage, BTM 1st Stage, Bengaluru, Karnataka 560068</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
                 <Clock className="w-4 h-4 text-brand-gold shrink-0" />

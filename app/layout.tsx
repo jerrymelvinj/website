@@ -87,16 +87,16 @@ export default function RootLayout({
     telephone: '+919035077840',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block',
-      addressLocality: 'Koramangala, Bengaluru',
+      streetAddress: '36, 20th Main Rd, Jay Bheema Nagar, 1st Stage',
+      addressLocality: 'BTM 1st Stage, Bengaluru',
       addressRegion: 'Karnataka',
-      postalCode: '560034',
+      postalCode: '560068',
       addressCountry: 'IN',
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 12.9352,
-      longitude: 77.6245,
+      latitude: 12.9166,
+      longitude: 77.6101,
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',

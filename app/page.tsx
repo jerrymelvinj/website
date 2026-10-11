@@ -9,9 +9,7 @@ export const revalidate = 60; // SSG with Incremental Static Regeneration (ISR)
 export default async function HomePage() {
   const artists = await getArtists();
 
-  const googleMapsUrl =
-    'https://maps.google.com/?q=' +
-    encodeURIComponent('TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034');
+  const googleMapsUrl = 'https://maps.app.goo.gl/7eZyR7dYE2iMueWy6';
 
   const whatsappPreloadedUrl =
     'https://wa.me/919035077840?text=' +
