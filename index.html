@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="hidden md:block">
-                    <a href="#contact" class="bg-brand-gold text-black px-6 py-2 rounded-full font-medium hover:bg-white transition-colors duration-300">Book Now</a>
+                    <a href="https://wa.me/919833065209?text=Hello%20Swink%20Tattoo%20Studio%2C%20I%20would%20like%20to%20book%20a%20tattoo%20consultation." target="_blank" class="bg-brand-gold text-black px-6 py-2 rounded-full font-medium hover:bg-white transition-colors duration-300">Book Now</a>
                 </div>
             </div>
         </div>
@@ -92,14 +92,14 @@
                     Your tattoo should embody the energy that defines you. At Swink, we craft designs that reflect your passions and story, creating art as dynamic and unique as you.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#location" class="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors">
+                    <a href="https://maps.google.com/?q=TV+Complex,+2,+60+Feet+Rd,+KHB+Colony,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560034" target="_blank" class="flex items-center justify-center gap-2 bg-white text-black px-8 py-4 rounded-full font-medium hover:bg-gray-200 transition-colors">
                         <i data-lucide="map-pin" class="w-5 h-5"></i> Locate Us
                     </a>
-                    <a href="tel:+" class="flex items-center justify-center gap-2 glass-panel text-white border border-gray-600 px-8 py-4 rounded-full font-medium hover:bg-white hover:text-black transition-colors">
+                    <a href="tel:+919833065209" class="flex items-center justify-center gap-2 glass-panel text-white border border-gray-600 px-8 py-4 rounded-full font-medium hover:bg-white hover:text-black transition-colors">
                         <i data-lucide="phone" class="w-5 h-5"></i> Book on Call
                     </a>
-                    <a href="#" class="flex items-center justify-center gap-2 bg-green-600 text-white px-8 py-4 rounded-full font-medium hover:bg-green-500 transition-colors">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i> WhatsApp
+                    <a href="https://wa.me/919833065209?text=Hello%20Swink%20Tattoo%20Studio%2C%20I%20would%20like%20to%20book%20a%20tattoo%20consultation." target="_blank" class="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-full font-medium hover:bg-[#20bd5a] transition-colors">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Book on WhatsApp
                     </a>
                 </div>
             </div>
@@ -223,48 +223,217 @@
         </div>
     </section>
 
-    <!-- Final CTA Section -->
-    <section id="contact" class="py-24 bg-brand-dark">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="relative bg-gradient-to-br from-[#111111] to-[#0a0a0a] border border-brand-gold/20 rounded-3xl p-12 md:p-16 text-center overflow-hidden shadow-2xl">
+    <!-- Appointment Booking Form Section -->
+    <section id="book-appointment" class="py-24 bg-brand-dark border-t border-gray-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="relative bg-gradient-to-br from-[#161616] via-[#111111] to-[#0a0a0a] border border-brand-gold/30 rounded-3xl p-8 sm:p-12 md:p-16 shadow-2xl overflow-hidden">
                 <!-- Background decoration -->
-                <div class="absolute -top-10 -right-10 text-brand-gold/5 transform rotate-12">
-                    <i data-lucide="shield-check" class="w-64 h-64"></i>
+                <div class="absolute -top-12 -right-12 text-brand-gold/5 pointer-events-none">
+                    <i data-lucide="calendar" class="w-72 h-72"></i>
                 </div>
                 
                 <div class="relative z-10">
-                    <h2 class="text-sm font-bold tracking-[0.2em] text-brand-gold uppercase mb-4">Start Your Journey</h2>
-                    <h3 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Ready to tell your story in ink?</h3>
-                    <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
-                        Your art is secured for life with our Lifetime TattooCare. Connect with us to explore custom designs, birthday discounts, EMI options, and get a free consultation today.
-                    </p>
-                    
-                    <a href="https://wa.me/919833065209" target="_blank" class="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-medium hover:bg-[#22bf5b] transition-all duration-300 shadow-[0_0_20px_rgba(37,211,102,0.2)] hover:shadow-[0_0_30px_rgba(37,211,102,0.4)] transform hover:-translate-y-1">
-                        <i data-lucide="message-circle" class="w-6 h-6"></i>
-                        Contact us on WhatsApp
-                    </a>
+                    <div class="text-center max-w-2xl mx-auto mb-10">
+                        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-widest text-brand-gold bg-brand-gold/10 border border-brand-gold/20 uppercase mb-4">
+                            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Easy WhatsApp Consultation
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4">Book Your Ink Session</h2>
+                        <p class="text-gray-400 text-base sm:text-lg">
+                            Fill in your details below. We'll automatically prepare a customized consultation request and open direct chat on WhatsApp with our artists!
+                        </p>
+                    </div>
+
+                    <form id="whatsappBookingForm" class="space-y-6 max-w-xl mx-auto" onsubmit="submitToWhatsApp(event)">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="clientName" class="block text-sm font-medium text-gray-300 mb-2">Your Full Name <span class="text-brand-gold">*</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                    <i data-lucide="user" class="w-5 h-5"></i>
+                                </div>
+                                <input type="text" id="clientName" required placeholder="e.g. Rahul Sharma" 
+                                    class="w-full pl-12 pr-4 py-3.5 bg-black/60 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Service Field -->
+                        <div>
+                            <label for="serviceType" class="block text-sm font-medium text-gray-300 mb-2">Type of Service <span class="text-brand-gold">*</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                    <i data-lucide="palette" class="w-5 h-5"></i>
+                                </div>
+                                <select id="serviceType" required 
+                                    class="w-full pl-12 pr-10 py-3.5 bg-black/60 border border-gray-700 rounded-xl text-white focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors appearance-none">
+                                    <option value="" disabled selected>Select a Service</option>
+                                    <option value="Fine-Line Tattoo">Fine-Line Tattoo</option>
+                                    <option value="Realism Tattoo">Realism & Portrait Tattoo</option>
+                                    <option value="Cover-Up Tattoo">Cover-Up Tattoo</option>
+                                    <option value="Geometric & Mandala">Geometric & Mandala</option>
+                                    <option value="Calligraphy Tattoo">Calligraphy & Lettering</option>
+                                    <option value="Travel Tattoo">Travel Tattoo (Cartography of the soul)</option>
+                                    <option value="Anime / Pop Culture">Anime / Manga Tattoo</option>
+                                    <option value="Pet Portrait">Pet Portrait</option>
+                                    <option value="Custom Design Consultation">Custom Design Consultation</option>
+                                    <option value="Piercing">Piercing</option>
+                                    <option value="Nail Art (Lust for Nails)">Nail Art (Lust for Nails)</option>
+                                </select>
+                                <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-gray-400">
+                                    <i data-lucide="chevron-down" class="w-5 h-5"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Date Field -->
+                        <div>
+                            <label for="bookingDate" class="block text-sm font-medium text-gray-300 mb-2">Preferred Date <span class="text-brand-gold">*</span></label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-gray-400">
+                                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                                </div>
+                                <input type="date" id="bookingDate" required 
+                                    class="w-full pl-12 pr-4 py-3.5 bg-black/60 border border-gray-700 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-brand-gold focus:ring-1 focus:ring-brand-gold transition-colors [color-scheme:dark]">
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-2">
+                            <button type="submit" 
+                                class="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-[#20bd5a] transition-all duration-300 shadow-[0_0_25px_rgba(37,211,102,0.25)] hover:shadow-[0_0_35px_rgba(37,211,102,0.45)] transform hover:-translate-y-0.5 cursor-pointer">
+                                <i data-lucide="message-circle" class="w-6 h-6"></i>
+                                Book Appointment on WhatsApp
+                            </button>
+                            <p class="text-center text-xs text-gray-500 mt-3 flex items-center justify-center gap-1.5">
+                                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-gold"></i> Lifetime TattooCare Guarantee • Direct Instant WhatsApp Chat
+                            </p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black py-12 border-t border-gray-900 text-center">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="font-serif text-3xl font-bold tracking-widest text-white uppercase mb-6">Swink</h2>
-            <p class="text-gray-500 text-sm mb-6">Artistry, Untamed. Crafted with passion.</p>
-            <div class="flex justify-center gap-6 mb-8 text-gray-400">
-                <a href="#" class="hover:text-white transition-colors"><i data-lucide="instagram" class="w-6 h-6"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i data-lucide="facebook" class="w-6 h-6"></i></a>
-                <a href="#" class="hover:text-white transition-colors"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+    <footer class="bg-black text-gray-300 border-t border-gray-900 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Column 1: Studio & Google Maps Navigation -->
+                <div class="space-y-4">
+                    <h2 class="font-serif text-3xl font-bold tracking-widest text-white uppercase">Swink</h2>
+                    <p class="text-sm text-gray-400 leading-relaxed">
+                        Artistry, Untamed. Guided by award-winning artists in our hygienic Bangalore studio.
+                    </p>
+                    
+                    <div class="pt-2">
+                        <div class="flex items-start gap-3 text-sm text-gray-300 mb-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold shrink-0 mt-0.5"></i>
+                            <span>TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-400 mb-4">
+                            <i data-lucide="clock" class="w-4 h-4 text-brand-gold shrink-0"></i>
+                            <span>All Days: 11:00 AM - 09:30 PM</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=TV+Complex,+2,+60+Feet+Rd,+KHB+Colony,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560034" target="_blank" 
+                           class="inline-flex items-center gap-2 bg-brand-gold text-black px-4 py-2.5 rounded-lg text-sm font-semibold hover:bg-white transition-colors duration-300 shadow-md">
+                            <i data-lucide="navigation" class="w-4 h-4"></i> Get Studio Directions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links to All Pages -->
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-white uppercase mb-4">Explore</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-brand-gold transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-brand-gold transition-colors">The Studio & Ethos</a></li>
+                        <li><a href="#artists" class="text-gray-400 hover:text-brand-gold transition-colors">Masters of Ink (Artists)</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Tattoo Categories</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-brand-gold transition-colors">Pricing Explained</a></li>
+                        <li><a href="#book-appointment" class="text-gray-400 hover:text-brand-gold transition-colors">Book Consultation</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Tattoo Styles (Categories) -->
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-white uppercase mb-4">Tattoo Styles</h3>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Fine-Line Tattoos</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Realism & Portrait</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Travel Tattoos</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Geometric & Mandala</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Cover-Up Tattoos</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Anime & Manga Art</a></li>
+                        <li><a href="categories.html" class="text-gray-400 hover:text-brand-gold transition-colors">Nail Art (Lust for Nails)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact & Socials -->
+                <div>
+                    <h3 class="text-sm font-semibold tracking-wider text-white uppercase mb-4">Connect With Us</h3>
+                    <ul class="space-y-3 text-sm mb-6">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="w-4 h-4 text-brand-gold shrink-0"></i>
+                            <a href="tel:+919833065209" class="text-gray-400 hover:text-white transition-colors">+91 98330 65209</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366] shrink-0"></i>
+                            <a href="https://wa.me/919833065209?text=Hello%20Swink%20Tattoo%20Studio%2C%20I%20would%20like%20to%20book%20a%20tattoo%20consultation." target="_blank" class="text-gray-400 hover:text-[#25D366] transition-colors">WhatsApp Consultation</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="w-4 h-4 text-brand-gold shrink-0"></i>
+                            <a href="mailto:getinked@swinktattoo.com" class="text-gray-400 hover:text-white transition-colors">getinked@swinktattoo.com</a>
+                        </li>
+                    </ul>
+
+                    <div class="flex items-center gap-4 text-gray-400">
+                        <a href="#" class="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Instagram">
+                            <i data-lucide="instagram" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Facebook">
+                            <i data-lucide="facebook" class="w-4 h-4"></i>
+                        </a>
+                        <a href="#" class="p-2 rounded-full bg-gray-900 hover:bg-brand-gold hover:text-black transition-all duration-300" aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <p class="text-gray-700 text-xs">&copy; 2026 Swink Tattoo Studio. All rights reserved.</p>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="pt-8 border-t border-gray-900 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Swink Tattoo Studio. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="https://maps.google.com/?q=TV+Complex,+2,+60+Feet+Rd,+KHB+Colony,+6th+Block,+Koramangala,+Bengaluru,+Karnataka+560034" target="_blank" class="hover:text-brand-gold transition-colors">Google Maps Directions</a>
+                    <a href="categories.html" class="hover:text-brand-gold transition-colors">All Categories</a>
+                    <a href="#about" class="hover:text-brand-gold transition-colors">Privacy & Terms</a>
+                </div>
+            </div>
         </div>
     </footer>
 
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
+
+        // Handle appointment form submission to WhatsApp with preloaded text
+        function submitToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('clientName').value.trim();
+            const service = document.getElementById('serviceType').value;
+            const date = document.getElementById('bookingDate').value;
+
+            const formattedDate = date ? new Date(date).toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric'
+            }) : date;
+
+            const message = `Hello Swink Tattoo Studio! 👋\n\nI would like to book a consultation with the following details:\n\n👤 *Name:* ${name}\n🎨 *Type of Service:* ${service}\n📅 *Preferred Date:* ${formattedDate}\n\nPlease let me know your artist availability and schedule. Thank you!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/919833065209?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
     </script>
 </body>
 </html>
