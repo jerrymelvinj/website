@@ -21,7 +21,7 @@ export default function BookingForm() {
     const message = `Hello Swink Tattoo Studio! 👋\n\nI would like to book a consultation with the following details:\n\n👤 *Name:* ${name}\n🎨 *Type of Service:* ${service}\n📅 *Preferred Date:* ${formattedDate}\n\nPlease let me know your artist availability and schedule. Thank you!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/919833065209?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/919035077840?text=${encodedMessage}`;
     window.open(whatsappUrl, '_blank');
   };
 

@@ -14,7 +14,7 @@ export default async function HomePage() {
     encodeURIComponent('TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034');
 
   const whatsappPreloadedUrl =
-    'https://wa.me/919833065209?text=' +
+    'https://wa.me/919035077840?text=' +
     encodeURIComponent('Hello Swink Tattoo Studio, I would like to book a tattoo consultation.');
 
   return (
@@ -39,7 +39,7 @@ export default async function HomePage() {
                 <MapPin className="w-5 h-5" /> Locate Us
               </a>
               <a
-                href="tel:+919833065209"
+                href="tel:+919035077840"
                 className="flex items-center justify-center gap-2 glass-panel text-white border border-gray-600 px-8 py-4 rounded-full font-medium hover:bg-white hover:text-black transition-colors"
               >
                 <Phone className="w-5 h-5" /> Book on Call

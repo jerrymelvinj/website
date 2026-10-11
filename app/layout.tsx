@@ -84,7 +84,7 @@ export default function RootLayout({
     image: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=1200&auto=format&fit=crop',
     '@id': 'https://swinktattoo.vercel.app',
     url: 'https://swinktattoo.vercel.app',
-    telephone: '+919833065209',
+    telephone: '+919035077840',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block',

@@ -19,7 +19,7 @@ export default {
       name: 'whatsappNumber',
       title: 'WhatsApp Contact Number (with country code)',
       type: 'string',
-      initialValue: '919833065209',
+      initialValue: '919035077840',
     },
     {
       name: 'address',

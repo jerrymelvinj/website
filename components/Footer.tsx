@@ -7,7 +7,7 @@ export default function Footer() {
     encodeURIComponent('TV Complex, 2, 60 Feet Rd, KHB Colony, 6th Block, Koramangala, Bengaluru, Karnataka 560034');
 
   const whatsappUrl =
-    'https://wa.me/919833065209?text=' +
+    'https://wa.me/919035077840?text=' +
     encodeURIComponent('Hello Swink Tattoo Studio, I would like to book a tattoo consultation.');
 
   return (
@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm mb-6">
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-brand-gold shrink-0" />
-                <a href="tel:+919833065209" className="text-gray-400 hover:text-white transition-colors">+91 98330 65209</a>
+                <a href="tel:+919035077840" className="text-gray-400 hover:text-white transition-colors">+91 90350 77840</a>
               </li>
               <li className="flex items-center gap-3">
                 <MessageCircle className="w-4 h-4 text-[#25D366] shrink-0" />

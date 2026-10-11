@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const whatsappPreloadedUrl =
-    'https://wa.me/919833065209?text=' +
+    'https://wa.me/919035077840?text=' +
     encodeURIComponent('Hello Swink Tattoo Studio, I would like to book a tattoo consultation.');
 
   return (
