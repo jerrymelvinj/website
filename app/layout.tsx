@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import WhatsAppFAB from '@/components/WhatsAppFAB';
+import MobileStickyFooter from '@/components/MobileStickyFooter';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -179,10 +181,12 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased selection:bg-brand-gold selection:text-black bg-brand-dark text-brand-light">
+      <body className="font-sans antialiased selection:bg-brand-gold selection:text-black bg-brand-dark text-brand-light pb-20 md:pb-0">
         <Navbar />
         {children}
         <Footer />
+        <WhatsAppFAB />
+        <MobileStickyFooter />
       </body>
     </html>
   );
