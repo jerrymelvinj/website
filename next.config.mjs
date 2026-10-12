@@ -18,6 +18,22 @@ const nextConfig = {
         source: '/categories.html',
         destination: '/categories',
       },
+      {
+        source: '/booking',
+        destination: '/',
+      },
+      {
+        source: '/artists',
+        destination: '/',
+      },
+      {
+        source: '/portfolio',
+        destination: '/categories',
+      },
+      {
+        source: '/faq',
+        destination: '/',
+      },
     ];
   },
 };

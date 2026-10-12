@@ -1,5 +1,6 @@
-# Robots.txt for Swink Tattoo Studio
 User-agent: *
 Allow: /
 
-Sitemap: https://swinktattoo.vercel.app/sitemap.xml
+# Host & Sitemap Directives
+Host: https://swinktattoostudio.in
+Sitemap: https://swinktattoostudio.in/sitemap.xml
