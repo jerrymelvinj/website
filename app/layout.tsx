@@ -71,6 +71,12 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  other: {
+    'geo.region': 'IN-KA',
+    'geo.placename': 'Bengaluru',
+    'geo.position': '12.9166;77.6101',
+    'ICBM': '12.9166, 77.6101',
+  },
 };
 
 export default function RootLayout({
@@ -168,10 +174,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`scroll-smooth ${inter.variable} ${playfair.variable}`}>
       <head>
-        <meta name="geo.region" content="IN-KA" />
-        <meta name="geo.placename" content="Bengaluru" />
-        <meta name="geo.position" content="12.9166;77.6101" />
-        <meta name="ICBM" content="12.9166, 77.6101" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
